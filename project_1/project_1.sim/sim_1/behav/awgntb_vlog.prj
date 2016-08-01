@@ -1,0 +1,31 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../lzd2.v"
+verilog xil_defaultlib  "../../../lzd4.v"
+verilog xil_defaultlib  "../../../lzd8.v"
+verilog xil_defaultlib  "../../../lzd16.v"
+verilog xil_defaultlib  "../../../lzd32.v"
+verilog xil_defaultlib  "../../../shiftery_f.v"
+verilog xil_defaultlib  "../../../shifteru0.v"
+verilog xil_defaultlib  "../../../shiftere.v"
+verilog xil_defaultlib  "../../../rom_c2e.v"
+verilog xil_defaultlib  "../../../rom_c1g.v"
+verilog xil_defaultlib  "../../../rom_c1f1.v"
+verilog xil_defaultlib  "../../../rom_c1f0.v"
+verilog xil_defaultlib  "../../../rom_c1e.v"
+verilog xil_defaultlib  "../../../rom_c0g.v"
+verilog xil_defaultlib  "../../../rom_c0f1.v"
+verilog xil_defaultlib  "../../../rom_c0f0.v"
+verilog xil_defaultlib  "../../../rom_c0e.v"
+verilog xil_defaultlib  "../../../lzd48.v"
+verilog xil_defaultlib  "../../../unit_sqrt.v"
+verilog xil_defaultlib  "../../../unit_log.v"
+verilog xil_defaultlib  "../../../unit_cos.v"
+verilog xil_defaultlib  "../../../urng.v"
+verilog xil_defaultlib  "../../../awgn.v"
+verilog xil_defaultlib  "../../../awgntb.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

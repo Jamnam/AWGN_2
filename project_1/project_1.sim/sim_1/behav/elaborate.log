@@ -1,0 +1,35 @@
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 26f6e4d63dd7447192be381e0bf1c9d7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot awgntb_behav xil_defaultlib.awgntb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.urng
+Compiling module xil_defaultlib.shifteru0
+Compiling module xil_defaultlib.lzd2
+Compiling module xil_defaultlib.lzd4
+Compiling module xil_defaultlib.lzd8
+Compiling module xil_defaultlib.lzd16
+Compiling module xil_defaultlib.lzd32
+Compiling module xil_defaultlib.lzd48
+Compiling module xil_defaultlib.rom_c2e
+Compiling module xil_defaultlib.rom_c1e
+Compiling module xil_defaultlib.rom_c0e
+Compiling module xil_defaultlib.unit_log
+Compiling module xil_defaultlib.rom_c1g
+Compiling module xil_defaultlib.rom_c0g
+Compiling module xil_defaultlib.unit_cos
+Compiling module xil_defaultlib.rom_c1f0
+Compiling module xil_defaultlib.rom_c0f0
+Compiling module xil_defaultlib.rom_c1f1
+Compiling module xil_defaultlib.rom_c0f1
+Compiling module xil_defaultlib.shiftere
+Compiling module xil_defaultlib.shiftery_f
+Compiling module xil_defaultlib.unit_sqrt
+Compiling module xil_defaultlib.awgn
+Compiling module xil_defaultlib.awgntb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot awgntb_behav

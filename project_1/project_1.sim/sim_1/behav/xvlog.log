@@ -1,0 +1,50 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jiangnan Xia/project_1/lzd2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lzd2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jiangnan Xia/project_1/lzd4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lzd4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jiangnan Xia/project_1/lzd8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lzd8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jiangnan Xia/project_1/lzd16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lzd16
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jiangnan Xia/project_1/lzd32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lzd32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jiangnan Xia/project_1/shiftery_f.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shiftery_f
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jiangnan Xia/project_1/shifteru0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shifteru0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jiangnan Xia/project_1/shiftere.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shiftere
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jiangnan Xia/project_1/rom_c2e.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rom_c2e
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jiangnan Xia/project_1/rom_c1g.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rom_c1g
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jiangnan Xia/project_1/rom_c1f1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rom_c1f1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jiangnan Xia/project_1/rom_c1f0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rom_c1f0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jiangnan Xia/project_1/rom_c1e.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rom_c1e
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jiangnan Xia/project_1/rom_c0g.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rom_c0g
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jiangnan Xia/project_1/rom_c0f1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rom_c0f1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jiangnan Xia/project_1/rom_c0f0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rom_c0f0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jiangnan Xia/project_1/rom_c0e.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rom_c0e
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jiangnan Xia/project_1/lzd48.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lzd48
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jiangnan Xia/project_1/unit_sqrt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module unit_sqrt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jiangnan Xia/project_1/unit_log.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module unit_log
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jiangnan Xia/project_1/unit_cos.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module unit_cos
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jiangnan Xia/project_1/urng.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module urng
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jiangnan Xia/project_1/awgn.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module awgn
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jiangnan Xia/project_1/awgntb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module awgntb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jiangnan Xia/project_1/project_1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

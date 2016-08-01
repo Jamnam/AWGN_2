@@ -1,0 +1,10 @@
+create_clock -period 6.666 -name clk -waveform {0.000 3.333} -add [get_ports clk]
+set_input_delay -clock [get_clocks clk] 1.000 [get_ports rst]
+set_input_delay -clock [get_clocks clk] 1.000 [get_ports urng_seed1]
+set_input_delay -clock [get_clocks clk] 1.000 [get_ports urng_seed2]
+set_input_delay -clock [get_clocks clk] 1.000 [get_ports urng_seed3]
+set_input_delay -clock [get_clocks clk] 1.000 [get_ports urng_seed4]
+set_input_delay -clock [get_clocks clk] 1.000 [get_ports urng_seed5]
+set_input_delay -clock [get_clocks clk] 1.000 [get_ports urng_seed6]
+set_output_delay -clock [get_clocks clk] 1.000 [get_ports awgn_out]
+

@@ -1,0 +1,795 @@
+
+*** Running vivado
+    with args -log awgn.vds -m64 -mode batch -messageDb vivado.pb -notrace -source awgn.tcl
+
+
+****** Vivado v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source awgn.tcl -notrace
+Command: synth_design -top awgn -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1988 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 271.660 ; gain = 65.035
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'awgn' [C:/Users/Jiangnan Xia/project_1/awgn.v:2]
+INFO: [Synth 8-638] synthesizing module 'urng' [C:/Users/Jiangnan Xia/project_1/urng.v:2]
+WARNING: [Synth 8-5788] Register a0_reg in module urng is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Jiangnan Xia/project_1/urng.v:24]
+WARNING: [Synth 8-5788] Register a1_reg in module urng is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Jiangnan Xia/project_1/urng.v:25]
+WARNING: [Synth 8-5788] Register a2_reg in module urng is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Jiangnan Xia/project_1/urng.v:26]
+INFO: [Synth 8-256] done synthesizing module 'urng' (1#1) [C:/Users/Jiangnan Xia/project_1/urng.v:2]
+INFO: [Synth 8-638] synthesizing module 'unit_log' [C:/Users/Jiangnan Xia/project_1/unit_log.v:2]
+	Parameter ln2 bound to: -1317922825 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'shifteru0' [C:/Users/Jiangnan Xia/project_1/shifteru0.v:2]
+INFO: [Synth 8-256] done synthesizing module 'shifteru0' (2#1) [C:/Users/Jiangnan Xia/project_1/shifteru0.v:2]
+INFO: [Synth 8-638] synthesizing module 'lzd48' [C:/Users/Jiangnan Xia/project_1/lzd48.v:2]
+INFO: [Synth 8-638] synthesizing module 'lzd32' [C:/Users/Jiangnan Xia/project_1/lzd32.v:2]
+INFO: [Synth 8-638] synthesizing module 'lzd16' [C:/Users/Jiangnan Xia/project_1/lzd16.v:2]
+INFO: [Synth 8-638] synthesizing module 'lzd8' [C:/Users/Jiangnan Xia/project_1/lzd8.v:2]
+INFO: [Synth 8-638] synthesizing module 'lzd4' [C:/Users/Jiangnan Xia/project_1/lzd4.v:2]
+INFO: [Synth 8-638] synthesizing module 'lzd2' [C:/Users/Jiangnan Xia/project_1/lzd2.v:2]
+INFO: [Synth 8-256] done synthesizing module 'lzd2' (3#1) [C:/Users/Jiangnan Xia/project_1/lzd2.v:2]
+INFO: [Synth 8-256] done synthesizing module 'lzd4' (4#1) [C:/Users/Jiangnan Xia/project_1/lzd4.v:2]
+INFO: [Synth 8-256] done synthesizing module 'lzd8' (5#1) [C:/Users/Jiangnan Xia/project_1/lzd8.v:2]
+INFO: [Synth 8-256] done synthesizing module 'lzd16' (6#1) [C:/Users/Jiangnan Xia/project_1/lzd16.v:2]
+INFO: [Synth 8-256] done synthesizing module 'lzd32' (7#1) [C:/Users/Jiangnan Xia/project_1/lzd32.v:2]
+INFO: [Synth 8-256] done synthesizing module 'lzd48' (8#1) [C:/Users/Jiangnan Xia/project_1/lzd48.v:2]
+INFO: [Synth 8-638] synthesizing module 'rom_c2e' [C:/Users/Jiangnan Xia/project_1/rom_c2e.v:2]
+INFO: [Synth 8-3876] $readmem data file 'c2e.list' is read successfully [C:/Users/Jiangnan Xia/project_1/rom_c2e.v:13]
+INFO: [Synth 8-256] done synthesizing module 'rom_c2e' (9#1) [C:/Users/Jiangnan Xia/project_1/rom_c2e.v:2]
+INFO: [Synth 8-638] synthesizing module 'rom_c1e' [C:/Users/Jiangnan Xia/project_1/rom_c1e.v:2]
+INFO: [Synth 8-3876] $readmem data file 'c1e.list' is read successfully [C:/Users/Jiangnan Xia/project_1/rom_c1e.v:13]
+INFO: [Synth 8-256] done synthesizing module 'rom_c1e' (10#1) [C:/Users/Jiangnan Xia/project_1/rom_c1e.v:2]
+INFO: [Synth 8-638] synthesizing module 'rom_c0e' [C:/Users/Jiangnan Xia/project_1/rom_c0e.v:2]
+INFO: [Synth 8-3876] $readmem data file 'c0e.list' is read successfully [C:/Users/Jiangnan Xia/project_1/rom_c0e.v:13]
+INFO: [Synth 8-256] done synthesizing module 'rom_c0e' (11#1) [C:/Users/Jiangnan Xia/project_1/rom_c0e.v:2]
+INFO: [Synth 8-256] done synthesizing module 'unit_log' (12#1) [C:/Users/Jiangnan Xia/project_1/unit_log.v:2]
+INFO: [Synth 8-638] synthesizing module 'unit_cos' [C:/Users/Jiangnan Xia/project_1/unit_cos.v:2]
+INFO: [Synth 8-638] synthesizing module 'rom_c1g' [C:/Users/Jiangnan Xia/project_1/rom_c1g.v:2]
+INFO: [Synth 8-3876] $readmem data file 'c1g.list' is read successfully [C:/Users/Jiangnan Xia/project_1/rom_c1g.v:15]
+INFO: [Synth 8-256] done synthesizing module 'rom_c1g' (13#1) [C:/Users/Jiangnan Xia/project_1/rom_c1g.v:2]
+INFO: [Synth 8-638] synthesizing module 'rom_c0g' [C:/Users/Jiangnan Xia/project_1/rom_c0g.v:2]
+INFO: [Synth 8-3876] $readmem data file 'c0g.list' is read successfully [C:/Users/Jiangnan Xia/project_1/rom_c0g.v:15]
+INFO: [Synth 8-256] done synthesizing module 'rom_c0g' (14#1) [C:/Users/Jiangnan Xia/project_1/rom_c0g.v:2]
+INFO: [Synth 8-256] done synthesizing module 'unit_cos' (15#1) [C:/Users/Jiangnan Xia/project_1/unit_cos.v:2]
+INFO: [Synth 8-638] synthesizing module 'unit_sqrt' [C:/Users/Jiangnan Xia/project_1/unit_sqrt.v:2]
+INFO: [Synth 8-638] synthesizing module 'rom_c1f0' [C:/Users/Jiangnan Xia/project_1/rom_c1f0.v:2]
+INFO: [Synth 8-3876] $readmem data file 'c1f0.list' is read successfully [C:/Users/Jiangnan Xia/project_1/rom_c1f0.v:12]
+INFO: [Synth 8-256] done synthesizing module 'rom_c1f0' (16#1) [C:/Users/Jiangnan Xia/project_1/rom_c1f0.v:2]
+INFO: [Synth 8-638] synthesizing module 'rom_c0f0' [C:/Users/Jiangnan Xia/project_1/rom_c0f0.v:2]
+INFO: [Synth 8-3876] $readmem data file 'c0f0.list' is read successfully [C:/Users/Jiangnan Xia/project_1/rom_c0f0.v:12]
+INFO: [Synth 8-256] done synthesizing module 'rom_c0f0' (17#1) [C:/Users/Jiangnan Xia/project_1/rom_c0f0.v:2]
+INFO: [Synth 8-638] synthesizing module 'rom_c1f1' [C:/Users/Jiangnan Xia/project_1/rom_c1f1.v:2]
+INFO: [Synth 8-3876] $readmem data file 'c1f1.list' is read successfully [C:/Users/Jiangnan Xia/project_1/rom_c1f1.v:12]
+INFO: [Synth 8-256] done synthesizing module 'rom_c1f1' (18#1) [C:/Users/Jiangnan Xia/project_1/rom_c1f1.v:2]
+INFO: [Synth 8-638] synthesizing module 'rom_c0f1' [C:/Users/Jiangnan Xia/project_1/rom_c0f1.v:2]
+INFO: [Synth 8-3876] $readmem data file 'c0f1.list' is read successfully [C:/Users/Jiangnan Xia/project_1/rom_c0f1.v:12]
+INFO: [Synth 8-256] done synthesizing module 'rom_c0f1' (19#1) [C:/Users/Jiangnan Xia/project_1/rom_c0f1.v:2]
+INFO: [Synth 8-638] synthesizing module 'shiftere' [C:/Users/Jiangnan Xia/project_1/shiftere.v:2]
+INFO: [Synth 8-256] done synthesizing module 'shiftere' (20#1) [C:/Users/Jiangnan Xia/project_1/shiftere.v:2]
+INFO: [Synth 8-638] synthesizing module 'shiftery_f' [C:/Users/Jiangnan Xia/project_1/shiftery_f.v:3]
+INFO: [Synth 8-256] done synthesizing module 'shiftery_f' (21#1) [C:/Users/Jiangnan Xia/project_1/shiftery_f.v:3]
+INFO: [Synth 8-256] done synthesizing module 'unit_sqrt' (22#1) [C:/Users/Jiangnan Xia/project_1/unit_sqrt.v:2]
+INFO: [Synth 8-256] done synthesizing module 'awgn' (23#1) [C:/Users/Jiangnan Xia/project_1/awgn.v:2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 309.063 ; gain = 102.438
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 309.063 ; gain = 102.438
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Jiangnan Xia/project_1/simple.xdc]
+Finished Parsing XDC File [C:/Users/Jiangnan Xia/project_1/simple.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 608.941 ; gain = 0.055
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 608.941 ; gain = 402.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 608.941 ; gain = 402.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 608.941 ; gain = 402.316
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Jiangnan Xia/project_1/unit_sqrt.v:115]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 608.941 ; gain = 402.316
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     38 Bit       Adders := 1     
+	   4 Input     30 Bit       Adders := 1     
+	   2 Input     20 Bit       Adders := 1     
+	   3 Input     19 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 3     
++---XORs : 
+	   2 Input     32 Bit         XORs := 6     
+	   3 Input     32 Bit         XORs := 2     
++---Registers : 
+	               80 Bit    Registers := 2     
+	               62 Bit    Registers := 3     
+	               53 Bit    Registers := 2     
+	               48 Bit    Registers := 1     
+	               40 Bit    Registers := 2     
+	               38 Bit    Registers := 4     
+	               32 Bit    Registers := 6     
+	               31 Bit    Registers := 1     
+	               30 Bit    Registers := 6     
+	               22 Bit    Registers := 1     
+	               20 Bit    Registers := 3     
+	               19 Bit    Registers := 5     
+	               17 Bit    Registers := 2     
+	               16 Bit    Registers := 13    
+	               13 Bit    Registers := 2     
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Multipliers : 
+	                40x40  Multipliers := 1     
+	                22x40  Multipliers := 1     
+	                13x40  Multipliers := 1     
+	                 6x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 12    
+	   2 Input     31 Bit        Muxes := 1     
+	  32 Input     31 Bit        Muxes := 1     
+	  16 Input     23 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	  17 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	   2 Input      2 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 20    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module awgn 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               48 Bit    Registers := 1     
+	               31 Bit    Registers := 1     
+	               17 Bit    Registers := 2     
+	               16 Bit    Registers := 12    
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module urng 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 3     
+	   3 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+Module lzd4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module lzd8 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+Module lzd16 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+Module lzd32 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module lzd48 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+Module unit_log 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     38 Bit       Adders := 1     
+	   4 Input     30 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               80 Bit    Registers := 2     
+	               62 Bit    Registers := 3     
+	               53 Bit    Registers := 2     
+	               40 Bit    Registers := 2     
+	               38 Bit    Registers := 4     
+	               30 Bit    Registers := 4     
+	               22 Bit    Registers := 1     
+	               13 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
++---Multipliers : 
+	                40x40  Multipliers := 1     
+	                22x40  Multipliers := 1     
+	                13x40  Multipliers := 1     
+	                 6x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+Module unit_cos 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     19 Bit       Adders := 2     
+	   2 Input     14 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 4     
+	               16 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+Module shiftere 
+Detailed RTL Component Info : 
++---Muxes : 
+	  32 Input     31 Bit        Muxes := 1     
+Module shiftery_f 
+Detailed RTL Component Info : 
++---Muxes : 
+	  16 Input     23 Bit        Muxes := 1     
+	  17 Input      4 Bit        Muxes := 1     
+Module unit_sqrt 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 2     
++---Registers : 
+	               30 Bit    Registers := 2     
+	               20 Bit    Registers := 3     
+	               19 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                6 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 608.941 ; gain = 402.316
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP prod1, operation Mode is: A*B.
+DSP Report: operator prod1 is absorbed into DSP prod1.
+DSP Report: operator prod1 is absorbed into DSP prod1.
+DSP Report: Generating DSP prod1, operation Mode is: A*B.
+DSP Report: operator prod1 is absorbed into DSP prod1.
+DSP Report: Generating DSP prod1, operation Mode is: A*B.
+DSP Report: operator prod1 is absorbed into DSP prod1.
+DSP Report: Generating DSP sqr_B, operation Mode is: A*B.
+DSP Report: operator sqr_B is absorbed into DSP sqr_B.
+DSP Report: operator sqr_B is absorbed into DSP sqr_B.
+DSP Report: Generating DSP sqr_B, operation Mode is: A*B.
+DSP Report: operator sqr_B is absorbed into DSP sqr_B.
+DSP Report: operator sqr_B is absorbed into DSP sqr_B.
+DSP Report: Generating DSP sqr_B, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator sqr_B is absorbed into DSP sqr_B.
+DSP Report: operator sqr_B is absorbed into DSP sqr_B.
+DSP Report: Generating DSP sqr_B, operation Mode is: A*B.
+DSP Report: operator sqr_B is absorbed into DSP sqr_B.
+DSP Report: operator sqr_B is absorbed into DSP sqr_B.
+DSP Report: Generating DSP sqr_B, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator sqr_B is absorbed into DSP sqr_B.
+DSP Report: operator sqr_B is absorbed into DSP sqr_B.
+DSP Report: Generating DSP prod2, operation Mode is: A*B.
+DSP Report: operator prod2 is absorbed into DSP prod2.
+DSP Report: operator prod2 is absorbed into DSP prod2.
+DSP Report: Generating DSP prod2, operation Mode is: A*B.
+DSP Report: operator prod2 is absorbed into DSP prod2.
+DSP Report: Generating DSP e1, operation Mode is: A*B.
+DSP Report: operator e1 is absorbed into DSP e1.
+DSP Report: Generating DSP e1, operation Mode is: A*B.
+DSP Report: operator e1 is absorbed into DSP e1.
+DSP Report: Generating DSP prod_a, operation Mode is: A*B.
+DSP Report: operator prod_a is absorbed into DSP prod_a.
+DSP Report: Generating DSP prod_b, operation Mode is: A*B.
+DSP Report: operator prod_b is absorbed into DSP prod_b.
+DSP Report: Generating DSP prod, operation Mode is: A*B.
+DSP Report: operator prod is absorbed into DSP prod.
+DSP Report: Generating DSP fg, operation Mode is: A*B.
+DSP Report: operator fg is absorbed into DSP fg.
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:38 . Memory (MB): peak = 608.941 ; gain = 402.316
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:30 ; elapsed = 00:00:38 . Memory (MB): peak = 608.941 ; gain = 402.316
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|rom_c2e     | p_0_out    | 256x13        | LUT            | 
+|rom_c1e     | p_0_out    | 256x22        | LUT            | 
+|rom_c0e     | p_0_out    | 256x30        | LUT            | 
+|rom_c1g     | p_0_out    | 128x12        | LUT            | 
+|rom_c1g     | p_0_out    | 128x12        | LUT            | 
+|rom_c0g     | p_0_out    | 128x19        | LUT            | 
+|rom_c0g     | p_0_out    | 128x19        | LUT            | 
+|rom_c1f0    | p_0_out    | 64x11         | LUT            | 
+|rom_c0f0    | p_0_out    | 64x20         | LUT            | 
+|rom_c1f1    | p_0_out    | 64x11         | LUT            | 
+|rom_c0f1    | p_0_out    | 64x20         | LUT            | 
+|rom_c2e     | p_0_out    | 256x13        | LUT            | 
+|rom_c1e     | p_0_out    | 256x22        | LUT            | 
+|rom_c0e     | p_0_out    | 256x30        | LUT            | 
+|unit_cos    | c0_ar_reg  | 128x19        | Block RAM      | 
+|unit_cos    | p_0_out    | 128x12        | LUT            | 
+|unit_cos    | c0_br_reg  | 128x19        | Block RAM      | 
+|unit_cos    | p_0_out    | 128x12        | LUT            | 
+|unit_sqrt   | p_0_out    | 64x11         | LUT            | 
+|unit_sqrt   | p_0_out    | 64x11         | LUT            | 
+|unit_sqrt   | p_0_out    | 64x20         | LUT            | 
+|unit_sqrt   | p_0_out    | 64x20         | LUT            | 
++------------+------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|unit_log    | A*B            | 23     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|unit_log    | A*B            | 24     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|unit_log    | A*B            | 24     | 6      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|unit_log    | A*B            | 24     | 7      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|unit_log    | A*B            | 24     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|unit_log    | (PCIN>>17)+A*B | 24     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|unit_log    | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|unit_log    | (PCIN>>17)+A*B | 24     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|unit_log    | A*B            | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|unit_log    | A*B            | 24     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|unit_log    | A*B            | 18     | 7      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|unit_log    | A*B            | 16     | 7      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|unit_cos    | A*B            | 12     | 7      | -      | -      | 19     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|unit_cos    | A*B            | 12     | 7      | -      | -      | 19     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|unit_sqrt   | A*B            | 19     | 11     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|awgn        | A*B            | 17     | 16     | -      | -      | 33     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'm3/e1r1_reg[0]__1' (FDC) to 'm3/e1r1_reg[3]__1'
+INFO: [Synth 8-3886] merging instance 'm3/e1r1_reg[1]__1' (FDC) to 'm3/e1r1_reg[2]__1'
+INFO: [Synth 8-3886] merging instance 'm3/e1r1_reg[2]__1' (FDC) to 'm3/e1r1_reg[6]__1'
+INFO: [Synth 8-3886] merging instance 'm3/e1r1_reg[3]__1' (FDC) to 'm3/e1r1_reg[4]__1'
+INFO: [Synth 8-3886] merging instance 'm3/e1r1_reg[4]__1' (FDC) to 'm3/e1r1_reg[5]__1'
+INFO: [Synth 8-3886] merging instance 'm3/e1r1_reg[5]__1' (FDC) to 'm3/e1r1_reg[7]__0'
+INFO: [Synth 8-3886] merging instance 'm3/e1r1_reg[6]__1' (FDC) to 'm3/e1r1_reg[8]__0'
+INFO: [Synth 8-3886] merging instance 'm3/e1r1_reg[7]__0' (FDC) to 'm3/e1r1_reg[11]__0'
+INFO: [Synth 8-3886] merging instance 'm3/e1r1_reg[8]__0' (FDC) to 'm3/e1r1_reg[9]__0'
+INFO: [Synth 8-3886] merging instance 'm3/e1r1_reg[9]__0' (FDC) to 'm3/e1r1_reg[10]__0'
+INFO: [Synth 8-3886] merging instance 'm3/e1r1_reg[10]__0' (FDC) to 'm3/e1r1_reg[13]__0'
+INFO: [Synth 8-3886] merging instance 'm3/e1r1_reg[11]__0' (FDC) to 'm3/e1r1_reg[12]__0'
+INFO: [Synth 8-3886] merging instance 'm3/e1r1_reg[12]__0' (FDC) to 'm3/e1r1_reg[14]__0'
+INFO: [Synth 8-3886] merging instance 'm3/e1r1_reg[13]__0' (FDC) to 'm3/e1r1_reg[15]__0'
+INFO: [Synth 8-3886] merging instance 'm3/e1r1_reg[14]__0' (FDC) to 'm3/e1r1_reg[0]__0'
+INFO: [Synth 8-3886] merging instance 'm3/e1r1_reg[15]__0' (FDC) to 'm3/e1r1_reg[3]__0'
+INFO: [Synth 8-3886] merging instance 'm3/e1r1_reg[0]__0' (FDC) to 'm3/e1r1_reg[1]__0'
+INFO: [Synth 8-3886] merging instance 'm3/e1r1_reg[1]__0' (FDC) to 'm3/e1r1_reg[2]__0'
+INFO: [Synth 8-3886] merging instance 'm3/e1r1_reg[2]__0' (FDC) to 'm3/e1r1_reg[4]__0'
+INFO: [Synth 8-3886] merging instance 'm3/e1r1_reg[3]__0' (FDC) to 'm3/e1r1_reg[11]'
+INFO: [Synth 8-3886] merging instance 'm3/e1r1_reg[4]__0' (FDC) to 'm3/e1r1_reg[5]__0'
+INFO: [Synth 8-3886] merging instance 'm3/e1r1_reg[5]__0' (FDC) to 'm3/e1r1_reg[6]__0'
+INFO: [Synth 8-3886] merging instance 'm3/e1r1_reg[6]__0' (FDC) to 'm3/e1r1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'm3/e1r1_reg[7]' (FDC) to 'm3/e1r1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'm3/e1r1_reg[8]' (FDC) to 'm3/e1r1_reg[9]'
+INFO: [Synth 8-3886] merging instance 'm3/e1r1_reg[9]' (FDC) to 'm3/e1r1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'm3/e1r1_reg[10]' (FDC) to 'm3/e1r1_reg[12]'
+INFO: [Synth 8-3886] merging instance 'm3/e1r1_reg[11]' (FDC) to 'm3/e1r1_reg[13]'
+INFO: [Synth 8-3886] merging instance 'm3/e1r1_reg[12]' (FDC) to 'm3/c1r1_reg[21]'
+INFO: [Synth 8-3886] merging instance 'm3/e1r1_reg[13]' (FDC) to 'm3/e1r1_reg[14]'
+INFO: [Synth 8-3886] merging instance 'm3/e1r1_reg[14]' (FDC) to 'm3/e1r1_reg[15]'
+INFO: [Synth 8-3886] merging instance 'm3/e1r1_reg[15]' (FDC) to 'm3/e1r1_reg[16]'
+INFO: [Synth 8-3886] merging instance 'm3/e1r1_reg[16]' (FDC) to 'm3/e1r1_reg[17]'
+INFO: [Synth 8-3886] merging instance 'm3/e1r1_reg[17]' (FDC) to 'm3/e1r1_reg[6]'
+INFO: [Synth 8-3886] merging instance 'm3/e1r1_reg[6]' (FDC) to 'm3/prod1r1_reg[23]__1'
+INFO: [Synth 8-3886] merging instance 'm3/e1r2_reg[0]__1' (FDC) to 'm3/e1r2_reg[12]__0'
+INFO: [Synth 8-3886] merging instance 'm3/e1r2_reg[1]__1' (FDC) to 'm3/e1r2_reg[6]__0'
+INFO: [Synth 8-3886] merging instance 'm3/e1r2_reg[2]__1' (FDC) to 'm3/e1r2_reg[6]__0'
+INFO: [Synth 8-3886] merging instance 'm3/e1r2_reg[3]__1' (FDC) to 'm3/e1r2_reg[12]__0'
+INFO: [Synth 8-3886] merging instance 'm3/e1r2_reg[4]__1' (FDC) to 'm3/e1r2_reg[12]__0'
+INFO: [Synth 8-3886] merging instance 'm3/e1r2_reg[5]__1' (FDC) to 'm3/e1r2_reg[12]__0'
+INFO: [Synth 8-3886] merging instance 'm3/e1r2_reg[6]__1' (FDC) to 'm3/e1r2_reg[6]__0'
+INFO: [Synth 8-3886] merging instance 'm3/e1r2_reg[7]__0' (FDC) to 'm3/e1r2_reg[12]__0'
+INFO: [Synth 8-3886] merging instance 'm3/e1r2_reg[8]__0' (FDC) to 'm3/e1r2_reg[6]__0'
+INFO: [Synth 8-3886] merging instance 'm3/e1r2_reg[9]__0' (FDC) to 'm3/e1r2_reg[6]__0'
+INFO: [Synth 8-3886] merging instance 'm3/e1r2_reg[10]__0' (FDC) to 'm3/e1r2_reg[6]__0'
+INFO: [Synth 8-3886] merging instance 'm3/e1r2_reg[11]__0' (FDC) to 'm3/e1r2_reg[12]__0'
+INFO: [Synth 8-3886] merging instance 'm3/e1r2_reg[12]__0' (FDC) to 'm3/e1r2_reg[14]__0'
+INFO: [Synth 8-3886] merging instance 'm3/e1r2_reg[13]__0' (FDC) to 'm3/e1r2_reg[6]__0'
+INFO: [Synth 8-3886] merging instance 'm3/e1r2_reg[14]__0' (FDC) to 'm3/prod1r1_reg[4]__1'
+INFO: [Synth 8-3886] merging instance 'm3/e1r2_reg[15]__0' (FDC) to 'm3/e1r2_reg[6]__0'
+INFO: [Synth 8-3886] merging instance 'm3/prod1r1_reg[23]__1' (FDC) to 'm3/prod1r1_reg[5]__1'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m3/\prod1r1_reg[5]__1 )
+INFO: [Synth 8-3886] merging instance 'm5/c1r_reg[10]' (FDC) to 'm5/c0r1_reg[19]'
+WARNING: [Synth 8-3332] Sequential element (m1/a1_reg[2]) is unused and will be removed from module awgn.
+WARNING: [Synth 8-3332] Sequential element (m1/a1_reg[1]) is unused and will be removed from module awgn.
+WARNING: [Synth 8-3332] Sequential element (m1/a1_reg[0]) is unused and will be removed from module awgn.
+WARNING: [Synth 8-3332] Sequential element (m1/a2_reg[3]) is unused and will be removed from module awgn.
+WARNING: [Synth 8-3332] Sequential element (m1/a2_reg[2]) is unused and will be removed from module awgn.
+WARNING: [Synth 8-3332] Sequential element (m1/a2_reg[1]) is unused and will be removed from module awgn.
+WARNING: [Synth 8-3332] Sequential element (m1/a2_reg[0]) is unused and will be removed from module awgn.
+WARNING: [Synth 8-3332] Sequential element (m1/a0_reg[0]) is unused and will be removed from module awgn.
+WARNING: [Synth 8-3332] Sequential element (m2/a1_reg[2]) is unused and will be removed from module awgn.
+WARNING: [Synth 8-3332] Sequential element (m2/a1_reg[1]) is unused and will be removed from module awgn.
+WARNING: [Synth 8-3332] Sequential element (m2/a1_reg[0]) is unused and will be removed from module awgn.
+WARNING: [Synth 8-3332] Sequential element (m2/a2_reg[3]) is unused and will be removed from module awgn.
+WARNING: [Synth 8-3332] Sequential element (m2/a2_reg[2]) is unused and will be removed from module awgn.
+WARNING: [Synth 8-3332] Sequential element (m2/a2_reg[1]) is unused and will be removed from module awgn.
+WARNING: [Synth 8-3332] Sequential element (m2/a2_reg[0]) is unused and will be removed from module awgn.
+WARNING: [Synth 8-3332] Sequential element (m2/a0_reg[0]) is unused and will be removed from module awgn.
+WARNING: [Synth 8-3332] Sequential element (prod1r1_reg[16]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r1_reg[15]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r1_reg[14]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r1_reg[13]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r1_reg[12]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r1_reg[11]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r1_reg[10]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r1_reg[9]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r1_reg[8]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r1_reg[7]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r1_reg[6]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r1_reg[5]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r1_reg[4]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r1_reg[3]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r1_reg[2]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r1_reg[1]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r1_reg[0]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[47]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[46]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[45]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[44]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[43]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[42]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[41]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[40]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[39]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[38]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[37]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[36]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[35]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[34]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[33]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[32]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[31]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[30]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[29]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[28]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[27]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[26]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[25]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[24]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[23]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[22]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[21]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[20]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[19]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[18]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[17]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[16]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[15]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[14]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[13]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[12]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[11]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[10]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[9]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[8]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[7]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[6]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[5]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[4]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[3]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[2]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[1]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r2_reg[0]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r3_reg[47]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r3_reg[46]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r3_reg[45]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r3_reg[44]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r3_reg[43]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r3_reg[42]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r3_reg[41]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r3_reg[40]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r3_reg[39]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r3_reg[38]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r3_reg[37]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r3_reg[36]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r3_reg[35]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r3_reg[34]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r3_reg[33]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r3_reg[32]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r3_reg[31]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r3_reg[30]) is unused and will be removed from module unit_log.
+WARNING: [Synth 8-3332] Sequential element (prod1r3_reg[29]) is unused and will be removed from module unit_log.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:46 . Memory (MB): peak = 608.941 ; gain = 402.316
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:37 ; elapsed = 00:00:46 . Memory (MB): peak = 608.941 ; gain = 402.316
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:54 ; elapsed = 00:01:03 . Memory (MB): peak = 644.273 ; gain = 437.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:01:05 . Memory (MB): peak = 653.293 ; gain = 446.668
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'i_5238' (FDC) to 'i_5455'
+INFO: [Synth 8-3886] merging instance 'i_5191' (FDC) to 'i_5455'
+INFO: [Synth 8-3886] merging instance 'i_5161' (FDC) to 'i_5455'
+INFO: [Synth 8-3886] merging instance 'i_5054' (FDC) to 'i_5455'
+INFO: [Synth 8-3886] merging instance 'i_5086' (FDC) to 'i_5455'
+INFO: [Synth 8-3886] merging instance 'm3/c1r1_reg[21]' (FDC) to 'i_5455'
+INFO: [Synth 8-3886] merging instance 'i_5287' (FDC) to 'i_5455'
+INFO: [Synth 8-3886] merging instance 'i_5319' (FDC) to 'i_5455'
+INFO: [Synth 8-3886] merging instance 'i_5132' (FDC) to 'i_5455'
+INFO: [Synth 8-3886] merging instance 'i_5356' (FDC) to 'i_5455'
+INFO: [Synth 8-3886] merging instance 'i_5393' (FDC) to 'i_5455'
+INFO: [Synth 8-3886] merging instance 'm5/c0r1_reg[19]' (FDC) to 'i_5455'
+INFO: [Synth 8-3886] merging instance 'i_5441' (FDC) to 'i_5455'
+INFO: [Synth 8-3886] merging instance 'm5/c0r2_reg[19]' (FDC) to 'm3/prod1r1_reg[4]__1'
+INFO: [Synth 8-3886] merging instance 'i_5415' (FDC) to 'i_5455'
+INFO: [Synth 8-3886] merging instance 'i_5428' (FDC) to 'i_5455'
+INFO: [Synth 8-3886] merging instance 'i_2472' (FDCE) to 'i_2517'
+INFO: [Synth 8-4480] The timing for the instance m4/c0_ar_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance m4/c0_ar_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance m4/c0_br_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance m4/c0_br_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:00 ; elapsed = 00:01:10 . Memory (MB): peak = 713.660 ; gain = 507.035
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:01:00 ; elapsed = 00:01:10 . Memory (MB): peak = 713.660 ; gain = 507.035
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:01:00 ; elapsed = 00:01:10 . Memory (MB): peak = 713.660 ; gain = 507.035
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:01 ; elapsed = 00:01:11 . Memory (MB): peak = 713.660 ; gain = 507.035
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:01 ; elapsed = 00:01:11 . Memory (MB): peak = 713.660 ; gain = 507.035
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:02 ; elapsed = 00:01:13 . Memory (MB): peak = 713.660 ; gain = 507.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:02 ; elapsed = 00:01:13 . Memory (MB): peak = 713.660 ; gain = 507.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:02 ; elapsed = 00:01:13 . Memory (MB): peak = 713.660 ; gain = 507.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:02 ; elapsed = 00:01:13 . Memory (MB): peak = 713.660 ; gain = 507.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+-----------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name        | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-----------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|awgn        | m3/c0r4_reg[29] | 4      | 30    | YES          | NO                 | YES               | 30     | 0       | 
+|awgn        | m4/quadr_reg[0] | 11     | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|awgn        | signr_reg       | 13     | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|awgn        | u1r_reg[13]     | 10     | 14    | YES          | NO                 | YES               | 14     | 0       | 
++------------+-----------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    86|
+|3     |DSP48E1  |    16|
+|4     |LUT1     |    33|
+|5     |LUT2     |   714|
+|6     |LUT3     |   368|
+|7     |LUT4     |   199|
+|8     |LUT5     |   223|
+|9     |LUT6     |   707|
+|10    |MUXF7    |   178|
+|11    |MUXF8    |    54|
+|12    |RAMB18E1 |     2|
+|13    |SRL16E   |    46|
+|14    |FDCE     |   888|
+|15    |FDPE     |   176|
+|16    |FDRE     |    46|
+|17    |LDC      |   176|
+|18    |IBUF     |   178|
+|19    |OBUF     |    16|
++------+---------+------+
+
+Report Instance Areas: 
++------+---------+----------+------+
+|      |Instance |Module    |Cells |
++------+---------+----------+------+
+|1     |top      |          |  4107|
+|2     |  m1     |urng      |   560|
+|3     |  m2     |urng_0    |   560|
+|4     |  m3     |unit_log  |  1757|
+|5     |    rom0 |rom_c0e   |    84|
+|6     |    m0   |shifteru0 |   174|
+|7     |    rom1 |rom_c1e   |   133|
+|8     |    rom2 |rom_c2e   |    75|
+|9     |  m4     |unit_cos  |   209|
+|10    |  m5     |unit_sqrt |   580|
++------+---------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:02 ; elapsed = 00:01:13 . Memory (MB): peak = 713.660 ; gain = 507.035
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1132 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:49 ; elapsed = 00:00:59 . Memory (MB): peak = 713.660 ; gain = 207.156
+Synthesis Optimization Complete : Time (s): cpu = 00:01:03 ; elapsed = 00:01:13 . Memory (MB): peak = 713.660 ; gain = 507.035
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 458 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 176 instances were transformed.
+  LDC => LDCE: 176 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+143 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:03 ; elapsed = 00:01:13 . Memory (MB): peak = 713.660 ; gain = 507.035
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 713.660 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 01 11:19:31 2016...
